@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Amazon Associates Site</title>
+    <style>
+        /* CSS styles will go here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #232f3e;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav {
+            background: #37475a;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .ad-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .ad-section h2 {
+            color: #37475a;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+        .banner-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .product-widget {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        footer {
+            background: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .disclaimer {
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Amazon Associates Site</h1>
+            <p>Discover amazing products and deals</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#electronics">Electronics</a></li>
+                <li><a href="#home-kitchen">Home & Kitchen</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <!-- Hero Banner Section -->
+        <section id="banner-section" class="ad-section">
+            <h2>Featured Deals</h2>
+            <div class="banner-container">
+                <!-- Replace with your Amazon Native Shopping Ad code -->
+                <div id="amazon-banner">
+                    <!-- Amazon Associates Banner Code Here -->
+                    <script type="text/javascript">
+                        // Example banner code - replace with your actual code
+                        amzn_assoc_placement = "adunit0";
+                        amzn_assoc_search_bar = "true";
+                        amzn_assoc_tracking_id = "yourtrackingid-20";
+                        amzn_assoc_ad_mode = "manual";
+                        amzn_assoc_ad_type = "smart";
+                        amzn_assoc_marketplace = "amazon";
+                        amzn_assoc_region = "US";
+                        amzn_assoc_title = "Shop Related Products";
+                        amzn_assoc_asins = "B08N5KWB9H,B07VGRJDFY,B08N5KQ1JT";
+                        amzn_assoc_linkid = "yourlinkid";
+                    </script>
+                    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Product Widgets Section -->
+        <section id="widget-section" class="ad-section">
+            <h2>Recommended Products</h2>
+            <div class="product-grid">
+                <!-- Product Widget 1 -->
+                <div class="product-widget">
+                    <!-- Replace with your Amazon Product Link code -->
+                    <div id="amazon-widget-1">
+                        <!-- Amazon Associates Product Widget Code Here -->
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=yourtrackingid-20&marketplace=amazon&region=US&placement=B08N5KWB9H&asins=B08N5KWB9H&linkId=yourlinkid&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Product Widget 2 -->
+                <div class="product-widget">
+                    <div id="amazon-widget-2">
+                        <!-- Another product widget -->
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=yourtrackingid-20&marketplace=amazon&region=US&placement=B07VGRJDFY&asins=B07VGRJDFY&linkId=yourlinkid&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Add more product widgets as needed -->
+            </div>
+        </section>
+        
+        <!-- Special Links Section -->
+        <section id="links-section" class="ad-section">
+            <h2>Special Offers</h2>
+            <div>
+                <!-- Replace with your Amazon Text Link code -->
+                <div id="amazon-links">
+                    <!-- Amazon Associates Text Links Here -->
+                    <p>Check out these great deals:</p>
+                    <ul>
+                        <li><a href="https://www.amazon.com/dp/B08N5KWB9H/?tag=yourtrackingid-20">Best Selling Product</a></li>
+                        <li><a href="https://www.amazon.com/dp/B07VGRJDFY/?tag=yourtrackingid-20">Popular Choice</a></li>
+                        <li><a href="https://www.amazon.com/dp/B08N5KQ1JT/?tag=yourtrackingid-20">Editor's Pick</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Native Shopping Ads Section -->
+        <section id="native-ads-section" class="ad-section">
+            <h2>More Products You Might Like</h2>
+            <div>
+                <!-- Replace with your Amazon Native Shopping Ad code -->
+                <div id="amazon-native-ads">
+                    <script type="text/javascript">
+                        amzn_assoc_placement = "adunit0";
+                        amzn_assoc_search_bar = "false";
+                        amzn_assoc_tracking_id = "yourtrackingid-20";
+                        amzn_assoc_ad_mode = "search";
+                        amzn_assoc_ad_type = "smart";
+                        amzn_assoc_marketplace = "amazon";
+                        amzn_assoc_region = "US";
+                        amzn_assoc_title = "Shop Related Products";
+                        amzn_assoc_default_search_phrase = "electronics";
+                        amzn_assoc_default_category = "All";
+                        amzn_assoc_linkid = "yourlinkid";
+                        amzn_assoc_search_bar_position = "top";
+                    </script>
+                    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Amazon Associates Site. All rights reserved.</p>
+            <p class="disclaimer">
+                As an Amazon Associate I earn from qualifying purchases. 
+                Product prices and availability are accurate as of the date/time indicated 
+                and are subject to change. Any price and availability information displayed 
+                on Amazon at the time of purchase will apply to the purchase of this product.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
